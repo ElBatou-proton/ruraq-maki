@@ -46,7 +46,7 @@ export function Contact() {
             Ready to start your project? Let's talk!
           </p>
         </div>
-        <div className="bg-slate-800/50 p-8 rounded-xl border border-purple-500/20 hover:border-purple-500/30 transition-all duration-300 relative z-10">
+        <div className="bg-slate-800/50 p-8 rounded-xl border border-emerald-500/20 hover:border-emerald-500/30 transition-all duration-300 relative z-10">
           <form onSubmit={handleFormSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -58,7 +58,7 @@ export function Contact() {
                 name="name"
                 value={formData.name}
                 onChange={handleFormChange}
-                className="w-full bg-slate-900/50 border border-purple-500/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"
+                className="w-full bg-slate-900/50 border border-emerald-500/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all duration-300"
                 placeholder="Your name"
                 required
               />
@@ -73,7 +73,7 @@ export function Contact() {
                 name="email"
                 value={formData.email}
                 onChange={handleFormChange}
-                className="w-full bg-slate-900/50 border border-purple-500/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"
+                className="w-full bg-slate-900/50 border border-emerald-500/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all duration-300"
                 placeholder="your@email.com"
                 required
               />
@@ -88,7 +88,7 @@ export function Contact() {
                 value={formData.message}
                 onChange={handleFormChange}
                 rows={4}
-                className="w-full bg-slate-900/50 border border-purple-500/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300 resize-none"
+                className="w-full bg-slate-900/50 border border-emerald-500/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all duration-300 resize-none"
                 placeholder="Tell us about your project..."
                 required
               />
@@ -106,7 +106,7 @@ export function Contact() {
             <button
               type="submit"
               disabled={formStatus === 'submitting'}
-              className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+              className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
             >
               {formStatus === 'submitting' ? 'Sending...' : 'Send Message'}
             </button>

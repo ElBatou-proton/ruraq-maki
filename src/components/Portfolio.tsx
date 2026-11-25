@@ -21,13 +21,13 @@ export function Portfolio() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-slate-900/50 rounded-xl border border-purple-500/20 overflow-hidden hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 group"
+              className="bg-slate-900/50 rounded-xl border border-emerald-500/20 overflow-hidden hover:border-emerald-500/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/20 group"
             >
-              <div className="h-48 bg-gradient-to-br from-purple-600/20 to-pink-600/20 flex items-center justify-center group-hover:from-purple-600/30 group-hover:to-pink-600/30 transition-all duration-300">
+              <div className="h-48 bg-gradient-to-br from-emerald-600/20 to-teal-600/20 flex items-center justify-center group-hover:from-emerald-600/30 group-hover:to-teal-600/30 transition-all duration-300">
                 <span className="text-6xl group-hover:scale-110 transition-transform duration-300">{project.emoji}</span>
               </div>
               <div className="p-6">
-                <span className="text-purple-400 text-sm font-medium">{project.category}</span>
+                <span className="text-emerald-400 text-sm font-medium">{project.category}</span>
                 <h3 className="text-xl font-semibold text-white mt-2">{project.title}</h3>
               </div>
             </div>
